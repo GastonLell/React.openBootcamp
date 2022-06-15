@@ -1,12 +1,11 @@
+import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
-import ContactList from './components/container/ContactList';
-import TaskList from './components/container/TaskList';
+import Clock from './components/container/Clock';
 
 function App() {
   return (
     <div className="App">
-      <TaskList/>
-      <ContactList/>
+        <Clock/>
     </div>
   );
 }

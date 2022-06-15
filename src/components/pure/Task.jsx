@@ -3,6 +3,18 @@ import PropTypes from 'prop-types';
 import { Task } from '../../models/task.class';
 
 const TaskComponent = ({ task }) => {
+
+    useEffect(() => {
+        
+        console.log('Created task')
+
+        return () => {
+            console.log(`Task: ${task.name} is going to unmount`)
+
+        }
+
+    }, [task])
+
     return (
         <div>
             <h2>
@@ -16,7 +28,7 @@ const TaskComponent = ({ task }) => {
             </h4>
 
             <h5>
-                This task is: { task.completed ? 'COMPLETED' : 'PENDING'}
+                This task is: {task.completed ? 'COMPLETED' : 'PENDING'}
             </h5>
         </div>
     )
