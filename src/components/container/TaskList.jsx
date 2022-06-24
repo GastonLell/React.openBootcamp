@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { LEVELS } from '../../models/levels.enum';
 import { Task } from '../../models/task.class';
 import TaskForm from '../pure/forms/TaskForm';
+import TaskFormik from '../pure/forms/TaskFormik';
 import TaskComponent from '../pure/Task';
 
 
@@ -62,7 +63,7 @@ const TaskList = () => {
           </div>
         </div>
       </div>
-      <TaskForm add={add}/>
+      <TaskFormik add={add}/>
     </div>
   )
 }
