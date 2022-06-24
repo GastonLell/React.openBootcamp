@@ -5,11 +5,15 @@ import './App.css';
 import ContactList from './components/container/ContactList';
 import TaskList from './components/container/TaskList';
 import LoginFormik from './components/pure/forms/LoginFormik';
+import RegisterFormik from './components/pure/forms/RegisterFormik';
 function App() {
   return (
     <div className="App">
-      <LoginFormik/>
+      {/* <LoginFormik/> */}
+      <RegisterFormik/>
+      
       {/* <ContactList/> */}
+
     </div>
   );
 }

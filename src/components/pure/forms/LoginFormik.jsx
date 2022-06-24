@@ -35,7 +35,7 @@ const LoginFormik = () => {
                 }
             >
                 {
-                    ({ values, touched, errors, isSubmitting, handleChange, handleBlur }) => {
+                    ({ isSubmitting, handleChange, handleBlur }) => {
                         return (
                             <Form>
                                 <div className="mb-3">
